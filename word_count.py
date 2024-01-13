@@ -20,6 +20,14 @@ else:
 for each_word in book:
     print(each_word, book[each_word])
 
+print(book.keys()) # prints dict_keys(['red', 'blue', 'green'])
+print(book.items()) # prints dict_items([('red', 4), ('blue', 2), ('green', 2)])
+
+# Another way to print each word with the number of times it appears
+for word, count in book.items():
+    print(f"'{word}': {count} time(s)")
+
+# test values:
 # red
 # red
 # red
@@ -28,3 +36,5 @@ for each_word in book:
 # blue
 # green
 # red
+    
+    
